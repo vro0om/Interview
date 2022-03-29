@@ -1,0 +1,28 @@
+Devlop Pricing engine
+
+Pricing
+5 Rs per hour
+
+
+2 hrs - 10
+
+
+QR scanned
+	Bike should be locked then we unlock , trip start time
+	else we throw error/exception
+
+User ends the trip
+
+	Subtract current time from start time * per hour rate
+
+Improvements:
+    Trip service to calculate the pricing using a pricing service(CyclePricing) which can be injected in the Trip Service constructor.
+
+    Cycle pricing (CyclePricing )contains the logic to calculate the price for a tip. At present the logic solely depends on per hour basis but this can be changed as per future requirements to calculate based on minutes, therefore separating the logic of calculating the trip cost
+
+    CyclePricing could be named as PricingService
+
+    More test cases to check trip time in fractions like half hour, 2 and a half hour
+
+
+
